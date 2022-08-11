@@ -8,7 +8,7 @@ const MainNav = () => {
 			<span className="font-bold cursor-pointer">LOGO/NAME</span>
 			<ul className="flex gap-x-8 uppercase font-semibold">
 				{navItems.map((item) => (
-					<li className="cursor-pointer">{item}</li>
+					<li className="cursor-pointer" key={item}>{item}</li>
 				))}
 			</ul>
 		</nav>

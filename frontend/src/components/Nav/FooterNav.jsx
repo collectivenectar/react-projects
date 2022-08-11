@@ -7,7 +7,7 @@ const FooterNav = () => {
 		<nav className="uppercase py-3 w-[90%] mx-auto">
 			<ul className="text-white text-sm flex uppercase justify-end gap-x-4 font-semibold">
 				{navItems.map((item) => (
-					<li className="cursor-pointer">{item}</li>
+					<li className="cursor-pointer" key={item}>{item}</li>
 				))}
 			</ul>
 		</nav>
